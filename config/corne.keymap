@@ -72,7 +72,16 @@
         };
 
 
-        extra_2 { status = "reserved"; };
+        extra_2 {
+    display-name = "Extra 1";
+    bindings = <
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+                         &trans &trans &trans       &trans &trans &trans
+            >;
+        };
+        
 
         extra_3 { status = "reserved"; };
 
