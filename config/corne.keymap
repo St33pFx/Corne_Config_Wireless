@@ -60,7 +60,17 @@
             >;
         };
 
-     
+
+        extra_1 {
+    display-name = "Extra 1";
+    bindings = <
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+        &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+                         &trans &trans &trans       &trans &trans &trans
+            >;
+        };
+
 
         extra_2 { status = "reserved"; };
 
