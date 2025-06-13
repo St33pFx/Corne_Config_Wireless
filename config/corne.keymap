@@ -22,10 +22,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L        &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp ESC         &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N        &kp E      &kp I    &kp O          &kp MINUS
-&kp LEFT_SHIFT  &kp X  &kp C  &kp D     &kp V  &kp Z        &kp K      &kp H        &kp COMMA  &kp DOT  &kp FSLH       &mt RSHFT SLASH
-                              &kp LWIN  &mo 1  &kp SPACE    &kp SPACE  &lt 2 ENTER  &kp RALT
+&kp TAB         &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L        &kp U          &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LCTRL       &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N        &kp E          &kp I    &kp O          &kp MINUS
+&kp LEFT_SHIFT  &kp X  &kp C  &kp D         &kp V  &kp Z        &kp K      &kp H        &kp COMMA      &kp DOT  &kp FSLH       &mt RSHFT SLASH
+                              &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &lt 2 ENTER  &kp RIGHT_GUI
             >;
         };
 
@@ -41,7 +41,7 @@
 &trans                &trans                &trans        &kp SYSREQ    &trans        &trans          &trans           &trans      &kp UP_ARROW  &trans      &trans  &trans
 &trans                &trans                &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans          &trans           &kp DOWN    &kp UP        &kp RIGHT   &trans  &trans
 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans        &trans        &trans        &kp C_VOL_DN    &kp C_VOLUME_UP  &kp K_PREV  &kp K_PP      &kp K_NEXT  &trans  &trans
-                                                          &kp LGUI      &trans        &kp SPACE       &kp SPACE        &mo 4       &kp RALT
+                                                          &kp LGUI      &trans        &kp SPACE       &kp SPACE        &mo 3       &kp RALT
             >;
         };
 
