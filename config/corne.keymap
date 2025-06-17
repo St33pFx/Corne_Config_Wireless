@@ -23,6 +23,11 @@
             key-positions = <2 3>;
             layers = <0>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <27 26>;
+        };
     };
 
     macros {
