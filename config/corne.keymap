@@ -5,15 +5,23 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <14 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Cole {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -22,14 +30,14 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F         &kp P  &kp B        &kp J      &kp L        &kp U          &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LSHFT  &kp A  &kp R  &kp S         &kp T  &kp G        &kp M      &kp N        &kp E          &kp I    &kp O          &kp MINUS
-&kp LCTRL  &kp X  &kp C  &kp D         &kp V  &kp Z        &kp K      &kp H        &kp COMMA      &kp DOT  &kp FSLH       &mt RSHFT SLASH
-                         &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &lt 2 ENTER  &kp RIGHT_GUI
+&kp TAB       &kp Q           &kp W        &kp F         &kp P      &kp B        &kp J       &kp L      &kp U          &kp Y    &kp SEMICOLON  &kp ESC
+&kp LSHFT     &kp A           &kp R        &kp S         &kp T      &kp G        &kp M       &kp N      &kp E          &kp I    &kp O          &kp MINUS
+&kp LEFT_ALT  &mt LEFT_WIN Z  &mt LCTRL X  &kp C         &kp D      &kp V        &kp K       &kp H      &kp COMMA      &kp DOT  &kp FSLH       &mt RSHFT SLASH
+                                           &kp LEFT_ALT  &lt 1 TAB  &kp SPACE    &kp RETURN  &lt 2 DEL  &kp RIGHT_GUI
             >;
         };
 
-        lower_layer {
+        Funciones {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -38,10 +46,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans                &trans                &trans        &kp SYSREQ    &trans        &trans          &trans           &trans          &kp UP_ARROW  &trans      &trans  &trans
-&trans                &trans                &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans          &trans           &kp LEFT_ARROW  &kp DOWN      &kp RIGHT   &trans  &trans
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans        &trans        &trans        &kp C_VOL_DN    &kp C_VOLUME_UP  &kp K_PREV      &kp K_PP      &kp K_NEXT  &trans  &trans
-                                                          &kp LGUI      &trans        &kp SPACE       &kp SPACE        &mo 3           &kp RALT
+&none         &none  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp C_BRIGHTNESS_INC    &none            &none           &kp UP_ARROW  &none       &none  &none
+&none         &none  &none      &none      &none      &kp C_BRI_DEC           &none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT   &none  &none
+&kp LEFT_GUI  &none  &kp LC(Z)  &kp LC(Y)  &kp LC(S)  &kp C_VOL_DN            &kp C_VOLUME_UP  &kp K_PREV      &kp K_PP      &kp K_NEXT  &none  &none
+                                &kp LGUI   &trans     &kp SPACE               &kp SPACE        &mo 3           &kp RALT
             >;
         };
 
