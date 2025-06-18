@@ -136,7 +136,7 @@
         };
 
         extra_2 {
-            display-name = "Extra 2";
+            display-name = "After";
             bindings = <
 &none   &DuplicarCapa    &LayerMask       &cut             &none   &none        &none      &none   &none     &none  &none  &none
 &none   &Centrar         &capaCreate      &DuplicarCapa    &none   &none        &none      &none   &none     &none  &none  &none
@@ -149,14 +149,25 @@
 
         Gaming {
             bindings = <
-&kp ESC         &kp ESCAPE        &kp Q  &kp W         &kp E         &kp R        &kp Y      &kp U          &kp I      &kp O    &kp P     &trans
-&kp LEFT_SHIFT  &kp LEFT_SHIFT    &kp A  &kp S         &kp D         &kp F        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &trans
-&kp LCTRL       &kp LEFT_CONTROL  &kp Z  &kp X         &kp C         &kp V        &kp N      &kp M          &kp COMMA  &kp DOT  &trans    &to 0
-                                         &kp LEFT_ALT  &kp LEFT_WIN  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DEL
+&kp ESC       &kp TAB           &kp Q  &kp W  &kp E         &kp R        &kp Y      &kp U          &kp I      &kp O    &kp P     &trans
+&kp LEFT_ALT  &kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &trans
+&kp LEFT_WIN  &kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V        &kp N      &kp M          &kp COMMA  &kp DOT  &trans    &to 0
+                                       &mo 7  &kp LEFT_WIN  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DEL
+            >;
+
+            label = "Game";
+        };
+
+        GAM1 {
+            bindings = <
+&kp F14       &trans  &trans  &trans  &kp N4        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13       &trans  &trans  &trans  &kp N5        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_WIN  &trans  &trans  &trans  &kp NUMBER_6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans        &trans    &trans  &trans  &trans
             >;
         };
 
-        layer_7 {
+        layer_8 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
