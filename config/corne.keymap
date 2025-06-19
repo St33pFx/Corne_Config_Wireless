@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp LCTRL &kp LEFT_ALT &kp LSHIFT &kp C_AC_HOME>;
 
             label = "CENTRAR";
@@ -44,7 +44,7 @@
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp LEFT_SHIFT &kp DELETE>;
+            bindings = <&macro_tap>, <&kp LCTRL &kp LEFT_SHIFT &kp DELETE>;
 
             label = "CUT";
         };
@@ -52,7 +52,7 @@
         capaCreate: capaCreate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(Y)>;
+            bindings = <&macro_tap>, <&kp LC(Y)>;
 
             label = "CAPACREATE";
         };
@@ -60,7 +60,7 @@
         DuplicarCapa: DuplicarCapa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(D)>;
+            bindings = <&macro_tap>, <&kp LC(D)>;
 
             label = "DUPLICARCAPA";
         };
@@ -68,7 +68,7 @@
         LayerMask: LayerMask {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(LA(Y))>;
+            bindings = <&macro_tap>, <&kp LC(LA(Y))>;
 
             label = "LAYERMASK";
         };
